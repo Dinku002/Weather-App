@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <input type="text" id="city" placeholder="Enter city name">
+        <button onclick="getWeather()">Get Forecast</button>
+        <p class="or-text">OR</p>
+        <button id="use-location">Use My Location</button>
+        <select id="recent-searches" onchange="setCity(this.value)">
+            <option value="">Recent Searches</option>
+        </select>
+        <div id="weather-info"></div>
+        <h2>7-Day Forecast</h2>
+        <div class="forecast" id="forecast"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
